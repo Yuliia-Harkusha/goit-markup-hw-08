@@ -1,0 +1,36 @@
+body {
+    color: var(--primary-text-color);
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+    font-style: bold;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
