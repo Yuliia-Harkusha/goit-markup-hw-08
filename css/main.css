@@ -1308,7 +1308,6 @@ ul {
 @media screen and (max-width: 767px) {
   .mobile-header {
     display: block;
-    max-width: 450px;
   }
 }
 
@@ -1353,6 +1352,7 @@ ul {
   width: 100%;
   height: auto;
   padding-top: 48px;
+  padding-bottom: 40px;
   padding-left: 40px;
   background-color: #fff;
 }
@@ -1392,7 +1392,7 @@ ul {
 
 .mobile-auth-nav__link--tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 31px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-text-color);

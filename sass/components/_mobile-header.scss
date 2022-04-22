@@ -5,7 +5,6 @@
     background-color: #fff;
     @media screen and (max-width: 767px) {
         display: block;
-        max-width: 450px;
     }
     
     @media screen and (min-width: 768px) {
@@ -51,6 +50,7 @@
     height: auto;
 
     padding-top: 48px;
+    padding-bottom: 40px;
     padding-left: 40px;
 
     background-color: #fff;
@@ -92,7 +92,7 @@
 
 .mobile-auth-nav__link--tel {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 31px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--accent-text-color);
