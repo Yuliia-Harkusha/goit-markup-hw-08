@@ -44,6 +44,12 @@
     text-align: center;
     text-transform: uppercase;
 
+    @media screen and (max-width: 387px) {
+        max-width: 310px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
     @media screen and (min-width: 1200px) {
         max-width: 696px;
         font-size: 44px;
