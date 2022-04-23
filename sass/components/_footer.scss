@@ -1,8 +1,19 @@
-.footer>.container {
+.footer-container {
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
 
     @media screen and (min-width: 1200px) {
         display: flex;
-        align-items: baseline;
+        flex-wrap: nowrap;
+        text-align: start;
     }
 }
 
@@ -35,7 +46,32 @@
 }
 
 .footer-logo-block {
-    margin-right: 70px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+       margin-right: 70px;
+    }
+}
+
+.footer .logo {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// Footer-socials 
+
+.footer-auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-join {
@@ -51,7 +87,6 @@
 
 .footer-socials {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-right: -10px;
 }
@@ -80,25 +115,52 @@
 // Footer form
 
 .footer-form {
-    margin-left: 93px;
+
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
 }
 
 .footer-form-list {
     display: flex;
     align-items: center;
+
+
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+    }
 }
 
 .footer-input {
-    margin-right: 12px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-    width: 358px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: var(--footer-auth-color);
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+        width: 358px;
+    }
 }
 
 .footer-form-btn {
