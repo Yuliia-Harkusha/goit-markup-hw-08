@@ -47,15 +47,17 @@
 }
 
 .team-wrapper {
-    padding: 30px 122px 24px 122px;
+    padding-top: 30px;
+    padding-bottom: 24px;
+    text-align: center;
 
-    @media screen and (min-width: 768px) {
-        padding: 30px 74px 24px 74px;
-    }
+    // @media screen and (min-width: 768px) {
+    //     padding: 30px 74px 24px 74px;
+    // }
     
-    @media screen and (min-width: 1200px) {
-        padding: 30px 32px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     padding: 30px 32px;
+    // }
 
 }
 
@@ -78,9 +80,17 @@
 
 .socials {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     margin-top: 16px;
+
+    // @media screen and (min-width: 768px) {
+    //     justify-content: space-between;
+    // }
+}
+
+.social-list:not(:last-child) {
+        margin-right: 10px;
 }
 
 .social-item {

@@ -40,6 +40,10 @@
             1px 4px 6px rgba(0, 0, 0, 0.16);
         }
 
+        &:hover .work-text-overlay {
+            transform: translateY(0);
+        }
+
         & .work-descr {
             padding: 20px 24px;
             border-right: 1px solid #eeeeee;
@@ -100,7 +104,7 @@
     color: var(--white-text-color);
 
         .work-link:hover & {
-            transform: translate(0);
+            transform: translateY(0);
         }
 
     @media screen and (max-width: 400px) {
