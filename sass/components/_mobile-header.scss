@@ -1,3 +1,9 @@
+.mobile-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .mobile-header {
     position: relative;
     width: 100%;
@@ -13,15 +19,14 @@
 }
 
 .menu-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
+    position: relative;
     display: inline-flex;
+    z-index: 5;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
-    z-index: 5;
+    cursor: pointer;
 
       &:hover,
       &:focus {
@@ -85,9 +90,9 @@
     color: var(--accent-text-color);
 }
 
-// .mobile-menu-group {
-//     margin-top: auto;
-// }
+.mobile-menu-group {
+    margin-top: auto;
+}
 
 .mobile-auth-nav {
     margin-bottom: 64px;
