@@ -755,6 +755,12 @@ ul {
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-auth {
+    align-items: start;
+  }
+}
+
 .footer-join {
   margin-bottom: 20px;
   font-family: var(--main-font);
@@ -978,7 +984,7 @@ ul {
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
-    margin: -var(--single-margin);
+    margin: -15px;
   }
 }
 
@@ -1084,7 +1090,7 @@ ul {
 
 @media screen and (max-width: 400px) {
   .work-item .work-text-overlay {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -1380,13 +1386,13 @@ ul {
 }
 
 .mobile-start {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .mobile-header {
-  position: relative;
   width: 100%;
   height: auto;
   background-color: #fff;
@@ -1405,7 +1411,6 @@ ul {
 }
 
 .menu-button {
-  position: relative;
   display: inline-flex;
   z-index: 5;
   margin: 0;
@@ -1417,6 +1422,12 @@ ul {
 
 .menu-button:hover, .menu-button:focus {
   fill: var(--accent-text-color);
+}
+
+.menu-button.is-active {
+  position: fixed;
+  top: 10px;
+  right: 15px;
 }
 
 .menu-button .mobile-icon--cross {
@@ -1449,11 +1460,8 @@ ul {
   padding-top: 48px;
   padding-bottom: 40px;
   padding-left: 40px;
+  padding-right: 20px;
   background-color: #fff;
-}
-
-.mobile-nav {
-  display: block;
 }
 
 .mobile-site-nav__item:not(:last-child) {
@@ -1486,7 +1494,7 @@ ul {
 
 .mobile-auth-nav__link--tel {
   font-weight: 500;
-  font-size: 31px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-text-color);
@@ -1533,7 +1541,7 @@ ul {
 
 @media screen and (max-width: 350px) {
   .mobile-socials__link {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.1;
   }
 }

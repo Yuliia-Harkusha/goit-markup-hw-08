@@ -1,11 +1,11 @@
 .mobile-start {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .mobile-header {
-    position: relative;
     width: 100%;
     height: auto;
     background-color: #fff;
@@ -19,7 +19,6 @@
 }
 
 .menu-button {
-    position: relative;
     display: inline-flex;
     z-index: 5;
     margin: 0;
@@ -31,6 +30,12 @@
       &:hover,
       &:focus {
           fill: var(--accent-text-color);
+      }
+
+      &.is-active {
+        position: fixed;
+        top: 10px;
+        right: 15px;
       }
 }
 
@@ -65,14 +70,12 @@
             padding-top: 48px;
             padding-bottom: 40px;
             padding-left: 40px;
+            padding-right: 20px;
             
             background-color: #fff;
         }
 }
 
-.mobile-nav {
-    display: block;
-}
 
 .mobile-site-nav__item:not(:last-child) {
     margin-bottom: 32px;
@@ -105,7 +108,7 @@
 
 .mobile-auth-nav__link--tel {
     font-weight: 500;
-    font-size: 31px;
+    font-size: 28px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--accent-text-color);
@@ -148,7 +151,7 @@
     }
 
     @media screen and (max-width: 350px) {
-        font-size: 12px;
+        font-size: 11px;
         line-height: 1.1;
     }
 }

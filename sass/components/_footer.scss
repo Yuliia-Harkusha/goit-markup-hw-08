@@ -72,6 +72,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        align-items: start;
+    }
 }
 
 .footer-join {

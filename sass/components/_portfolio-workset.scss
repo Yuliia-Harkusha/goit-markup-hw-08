@@ -5,7 +5,7 @@
         display: flex;
         align-items: stretch;
         flex-wrap: wrap;
-        margin: -var(--single-margin);
+        margin: -15px;
     }
 }
 
@@ -108,7 +108,7 @@
         }
 
     @media screen and (max-width: 400px) {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 }
