@@ -36,12 +36,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 767.5px) {
-  body.is {
-    overflow: hidden;
-  }
-}
-
 img {
   display: block;
   max-width: 100%;
